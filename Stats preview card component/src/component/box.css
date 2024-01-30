@@ -1,0 +1,11 @@
+.num{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+
+.txt{
+    color: hsla(0, 0%, 100%, 0.6);
+
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Public+Sans:wght@300;500;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    background-image: url('/public/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width:425px){
+ body{
+    background-image: url('/public/pattern-background-mobile.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+ }    
+}

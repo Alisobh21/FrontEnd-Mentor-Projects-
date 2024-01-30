@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+/* font-family: 'Overpass',sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+/* font-family: 'Ubuntu',sans-serif; */
+:root{
+    ---white: hsl(0, 0%, 100%); /*(footer text) */
+    ---grayish-blue: hsl(240, 2%, 79%); /* (body copy)*/
+    ---very-dark-grayish-blue: hsl(207, 13%, 34%); /* (body copy)*/
+    ---very-dark-black-blue: hsl(240, 10%, 16%); /* (footer background)*/
+    ---very-light-red: hsl(13, 100%, 72%);
+    --light-red: hsl(353, 100%, 62%);
+    ---very-dark-gray-blue: hsl(237, 17%, 21%);
+    ---very-dark-desaturated-blue: hsl(237, 23%, 32%)
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}

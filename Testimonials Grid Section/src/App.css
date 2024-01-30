@@ -1,0 +1,130 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    height: 100vh;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, 280px);
+    /* grid-template-rows:1fr 1fr ; */
+    gap: 20px;
+    grid-template-areas:
+        "card1 card1 card2 card3"
+        "card4 card5 card5 card3"
+        
+}
+
+
+
+.card{
+    overflow: hidden;
+    border-radius: 10px;
+    padding-top: 15px;
+    
+}
+
+.card-1{
+   grid-area: card1;
+   background-image: url('/public/bg-pattern-quotation.svg');
+   background-repeat: no-repeat;
+   background-position: right 15% top 5%;
+    color: var(---white);
+   background-color: var(---moderate-violet);
+   
+    
+}
+.card-2{
+    grid-area: card2;
+    color: var(---white);
+    background-color: var(---very-dark-grayish-blue);
+    
+}
+
+
+.card-3{
+    grid-area:card3;
+    grid-row-start: span 2;
+    background-color: var(---white);
+    height: 100%;
+}
+
+.card-4{
+    grid-area: card4;
+    background-color: var(---white);
+}
+.card-5 {
+    grid-area: card5;
+    background-color: var(---very-dark-blackish-blue);
+}
+
+img{
+    border-radius: 50%;
+}
+h4{
+    color: hsl(0, 0%, 100%);
+}
+
+small{
+    color: hsla(0, 0%, 100%,.5);
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.text{
+    margin: 10px;
+}
+
+
+.p1{
+    padding: 5px 15px;
+    max-width: 500px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+
+.p2{
+    padding: 10px 15px;
+    max-width: 500px;
+    color: hsla(0, 0%, 100%,.7);
+    
+}
+
+
+
+.card-3 >.top>.text>h4,.card-4>.top>.text>h4{
+    color: hsl(219, 29%, 14%) !important;
+}
+
+
+.card-3>.top>.text>small,.card-4>.top>.text>small {
+    color: hsla(219, 29%, 14%,.5) !important;
+}
+
+.card-3 .p1 ,.card-4 .p1 {
+    color: hsl(219, 29%, 14%) !important;
+}
+
+.card-3 .p2 , .card-4 .p2 {
+    color: hsla(219, 29%, 14%,.7) !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container{
+        height: 100%;
+        margin: 20px 30px;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+
+    }
+}

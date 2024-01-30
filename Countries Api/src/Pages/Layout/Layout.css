@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.elementDark {
+    background-color: hsl(209, 23%, 22%);
+}
+.elementLight {
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+}
+select.elementLight{
+    color: hsl(0, 0%, 52%) !important;
+}
+.elementLight::placeholder {
+    color: hsl(0, 0%, 52%);
+}
+
+
+
+.light {
+    color: hsl(0, 0%, 52%);;
+    background-color: hsl(0, 0%, 98%);
+}
+

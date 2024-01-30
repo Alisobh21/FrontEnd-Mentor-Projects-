@@ -1,0 +1,119 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+ 
+
+}
+
+
+.wrapper{
+  display: grid;
+  border-radius: 10px;
+  background-color: #fff;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+  margin: 2rem 1rem;
+}
+.box{
+  padding: 40px;
+}
+.join {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.sub{
+  background-color: hsl(179, 62%, 43%);
+
+}
+
+.why{
+  background-color: hsl(179, 62%, 50%);
+}
+
+h1{
+  color: hsl(179, 62%, 43%);
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+
+h3{
+  color: hsl(71,73%,54%);
+  padding-bottom: 12px;
+}
+
+.join p {
+  color:hsl(218, 22%, 67%);
+  line-height: 1.4;
+}
+
+h2 {
+  color: #fff;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+h5{
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+
+}
+
+
+h5 span.price{
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  padding-right: 10px;
+
+}
+
+
+h5 span{
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
+}
+
+.sub p{
+  color:#fff;
+  font-size: 15px;
+}
+
+.sub a {
+  display: block;
+  text-align: center;
+  background-color: hsl(71,73%,54%);
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  padding: 12px 0;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+
+.why ul{
+  list-style: none;
+}
+
+.why li {
+  color: #fff;
+  padding-bottom: 4px;
+  font-size: 15px;
+}
+
+
+@media screen and (max-width:456px) {
+  .wrapper{
+    grid-template-columns: 100%;
+  }
+  .join{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .box{
+    padding: 30px;
+  }
+}

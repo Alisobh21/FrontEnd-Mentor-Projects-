@@ -1,0 +1,32 @@
+.card{
+max-width:100%;
+border-radius: 10px;
+overflow: hidden;
+padding-left: 0;
+
+}
+
+
+
+.card img{
+   width:300px;
+   object-fit: fit;
+   height: 200px;
+}
+
+.details{
+    padding: 20px 20px;
+    margin-bottom: 10px;
+}
+
+h5{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+.card  p{
+    font-size: 14px;
+    margin-bottom: 5px;
+}

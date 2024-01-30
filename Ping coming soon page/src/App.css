@@ -1,0 +1,162 @@
+.container{
+   
+    margin: 30px auto;
+    padding: 0 30px;
+    
+}
+
+.wrapper{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.wrapper >.logo{
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 150px;
+}
+
+.wrapper .top{
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    color:hsl(0, 0%, 59%) ;
+    font-size: 24px; 
+}
+
+h1{
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+h1>span{
+    font-weight: 700;
+    font-weight: bold;
+    color: black;
+}
+
+
+.top > p {
+    color: hsl(0, 1%, 30%);
+    margin-bottom: 40px;
+}
+
+.sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sub>form{
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.sub>form>input{
+    width: 350px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: 0.5px solid lightgray;
+    font-family: 'Libre Franklin', sans-serif;
+}
+input:focus {
+    outline: none;
+}
+.dash{
+    max-width:800px;
+    margin-top: 50px;
+}
+
+input::placeholder {
+    color: hsl(0, 0%, 59%);
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+button:hover {
+    cursor: pointer;
+    box-shadow: .2rem .2rem 1rem hsl(223, 100%, 88%);
+}
+
+.sub>form>button{
+        font-size: 18px;
+        padding: 15px 50px;
+        background: hsl(223, 87%, 63%);
+        color: white;
+        border-radius: 30px;
+        border: none;
+        font-family: 'Libre Franklin',sans-serif;
+        font-weight: 700;
+        margin-left: 10px;
+        transition: box-shadow .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social>li{
+    list-style-type: none;
+}
+.social >li>a>i{
+    margin: 20px;
+    font-size: 1.5em;
+    color: hsl(223, 87%, 63%);
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+   .wrapper{
+    margin-top: 5px;
+   }
+    .wrapper .top{
+    width: 100%;
+    font-size: 14px;
+    }
+
+   
+
+    .sub>form>input {
+        width: 90%;
+        /* width: 250px; */
+
+    }
+    input::placeholder {
+    color: hsl(0, 0%, 59%);
+    font-size:12px;
+    text-align: center;
+    }
+
+   .sub>form>button{
+    width:90%;
+    margin-left: 0;
+    padding: 14px;
+    font-size: 12px;
+    margin-top: 27px;
+   }
+
+   
+   input::placeholder {
+       font-size:12px;
+   }
+
+   .dash {
+       max-width: 400px;    
+   }
+   .social>li>a>i {
+     font-size: 1em;
+   }
+}

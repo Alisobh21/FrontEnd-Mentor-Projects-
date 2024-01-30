@@ -1,0 +1,83 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+   
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.box{
+    padding: 50px;
+    
+}
+
+
+.box >h2{
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+
+}
+.box  p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.8;
+}
+
+.box a {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 13px 27px;
+    border-radius: 26px;
+    margin-top: 60px;
+    display: inline-block;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: all .4s ease-in-out;
+}
+
+.box a:hover{
+    color:hsl(0, 0%, 95%); ;
+    background: transparent;
+}
+.box1 a{
+    color: hsl(31, 77%, 52%);
+}
+.box2 a {
+    color: hsl(184, 100%, 22%);
+}
+.box3 a {
+    color: hsl(179, 100%, 13%);
+}
+
+.box1 {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.box2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.box3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+@media only screen and (max-width:768px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .wrapper {
+        margin: 1rem .5rem;
+    }
+}

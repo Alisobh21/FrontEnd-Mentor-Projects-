@@ -1,0 +1,56 @@
+.container{
+  max-width: 360px;
+  margin: 0 auto;
+
+}
+
+.card img{
+  width: 100%;
+  border-radius: 12px;
+}
+
+
+.card{
+  background-color: hsl(0, 0%, 100%);
+  padding: 18px;
+  border-radius: 17px;
+  text-align: center;
+  margin: 0 1em;
+
+}
+
+
+.text{
+  padding: 22px 10px;
+}
+
+
+.text h2{
+  color: hsl(218, 44%, 22%);
+  padding-bottom: 15px;
+}
+
+input::placeholder{
+  
+  color: hsl(217, 64%, 44%);
+}
+.text input{
+  color: hsl(218, 44%, 22%);
+  /* color: hsl(220, 15%, 55%); */
+  height: 30px;
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid #3685ff;
+}
+
+
+input:focus {
+    outline-width: 2px;
+    outline-color: #1a91bb;
+    
+}
+
+

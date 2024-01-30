@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Poppins:wght@400;500;600;700&family=Public+Sans:wght@300;500;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Lexend+Deca&family=Poppins:wght@400;500;600;700&family=Public+Sans:wght@300;500;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+
+body{
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: hsla(0, 0%, 100%, 0.75);
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 400;
+}
+

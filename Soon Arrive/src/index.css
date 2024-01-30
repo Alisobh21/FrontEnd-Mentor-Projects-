@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+:root{
+    --grayish-blue: hsl(237, 18%, 59%);
+    --soft-red: hsl(345, 95%, 68%);
+    --white: hsl(0, 0%, 100%);
+    --dark-desaturated-blue: hsl(236, 21%, 26%);
+    --very-dark-blue: hsl(235, 16%, 14%);
+    --very-dark-blue: hsl(234, 17%, 12%); /* (mostly black)*/
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    height: 100vh;
+    background-image: url('/public/pattern-hills.svg') , url('/public/bg-stars.svg');
+    background-color: var(--very-dark-blue);
+    background-position: 0% 100% ,0;
+    background-repeat: no-repeat ,repeat;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        height: auto;
+        background-position: 0% 350%, 0;
+    }
+}

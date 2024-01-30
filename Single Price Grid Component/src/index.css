@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Manrope:wght@600;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: hsl(204, 43%, 93%);
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

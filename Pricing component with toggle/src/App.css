@@ -1,0 +1,163 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.wrapper{
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.title{
+    font-size: 32px;
+    color: hsl(233 , 13%, 49%);
+}
+
+.pricing{
+    display: flex;
+    justify-content: center;
+    color: hsl(234 , 14%, 74%);
+    align-items: center;
+    padding: 15px 0;
+}
+
+.pricing-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pricing-box{
+    background:#fff;
+    align-self: center;
+    padding: 30px 30px;
+    border-radius: 12px;
+}
+
+.box-title{
+    color: hsl(233, 13%, 49%);
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+
+.price-annually,.price-monthly{
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(232, 13%, 33%);
+}
+
+
+.show{
+    display: none;
+}
+
+.price{
+    font-size: 65px;
+    padding-left: 7px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 35px 0;
+}
+
+ul li{
+    color: hsl(233, 13%, 49%);
+    border-bottom: 1px solid hsl(234, 14%, 74%);
+    padding: 18px 0;
+}
+
+
+ul li:first-child{
+    border-top: 1px solid hsl(234, 14%, 74%);
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(180deg,hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+    padding: 16px 0;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 7px;
+}
+
+a:hover{
+    color: hsl(237, 63%, 64%);
+    background: transparent;
+    border-color:  hsl(237, 63%, 64%);
+}
+
+
+.pricing-box.featured {
+    background: linear-gradient(180deg,
+            hsl(236, 72%, 79%),
+            hsl(237, 63%, 64%));
+    transform: scaleX(1.05);
+    padding: 80px 40px;
+}
+
+.pricing-box.featured p {
+    color: #FFF;
+}
+
+.pricing-box.featured ul li {
+    color: #FFF;
+   
+}
+
+.pricing-box.featured a {
+    background: #FFF;
+    color: hsl(237, 63%, 64%);
+}
+
+.pricing-box.featured a:hover {
+    color: #FFF;
+    border-color: #FFF;
+    background: transparent;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 50px;
+    }
+
+    .pricing-box {
+        padding: 40px 30px;
+    }
+
+    .pricing-box.feautred {
+        padding: 70px 30px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .pricing-main {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .price {
+        font-size: 50px;
+    }
+
+    .pricing-box {
+        padding: 50px 50px;
+    }
+
+    .pricing-box.featured {
+        transform: scaleX(1);
+        padding: 50px 50px;
+    }
+}
