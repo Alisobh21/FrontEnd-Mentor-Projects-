@@ -1,0 +1,178 @@
+.p-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    
+
+}
+
+.p-header >h1{
+    font-size:50px;
+}
+
+.p-header>a{
+    color: white;
+    font-size: 20px;
+    text-decoration: underline solid #4EE1A0;
+    text-underline-offset: 10px;
+    }
+
+
+  .p-header>a:hover{
+    color: #4EE1A0;
+  }  
+
+
+  .p-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+    overflow: hidden;
+    
+    margin-bottom: 6rem;
+  }
+
+
+  .im{
+    margin-top: 3rem;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .p-text{
+    margin-top: 2rem;
+  }
+
+
+  .p-text>h3{
+    font-size: 23px;
+    padding-bottom: 10px;
+  }
+  .prag{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+  }
+.p-all{
+    position: relative;
+}
+.img-container{
+  position: relative;
+  max-width: 100%;
+    max-height: 100%;
+}
+
+.hide{
+  width: 100%;
+  height: 90%;
+  top: 10%;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+  opacity: 0;
+  padding: 0;
+}
+
+.hide:hover{
+  opacity: 1;
+}
+
+
+
+
+.hide>a{
+    font-size: 20px;
+    color: white;
+    text-decoration: underline solid #4EE1A0;
+    text-underline-offset: 10px;
+   
+} 
+
+
+.hide>a:hover {
+  color: #4EE1A0;
+}
+
+.im:hover{
+    opacity: 20%;
+}
+
+
+.hide-mobile{
+  display: none;
+}
+
+
+@media screen and (max-width:600px) {
+.p-header>h1 {
+    font-size: 40px;
+  }
+
+.p-header>a {
+  font-size: 18px;
+}
+
+.p-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+.prag {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.p-all {
+  position: relative;
+}
+
+
+
+.hide-mobile {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 40px;
+  padding-top:20px;
+  
+ 
+}
+
+
+.p-container:last-child{
+  padding-bottom: 10px;
+}
+
+.hide{
+  display:none
+}
+
+.im:hover+.hide {
+      display: none;    
+}
+
+
+
+.hide-mobile>a {
+  font-size: 20px;
+  color: white;
+  text-decoration: underline solid #4EE1A0;
+  text-underline-offset: 10px;
+}
+
+
+.hide-mobile>a:hover{
+  color: #4EE1A0;
+}
+
+}
